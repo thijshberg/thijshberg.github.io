@@ -1,0 +1,21 @@
+{{ define "main"}}
+<ul>
+{{ range $pub := .Site.Data.publications}}
+  <div>
+    <b>{{ .title }}</b><br>
+    <i>{{ .authors }}</i><br>
+    {{ with .venue}}
+    Published at: {{ . }}
+    {{ else }}
+    Unpublished
+    {{ end }}
+    <details>
+      <summary><b>Abstract</b></summary>
+      {{ .abstract }} 
+    </details>
+  </div><p>
+{{end}}
+</ul>
+{{ .Content }}
+
+{{ end }}

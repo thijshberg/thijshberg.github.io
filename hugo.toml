@@ -1,0 +1,6 @@
+baseURL = 'https://thijs.heijligenberg.nl/'
+languageCode = 'en-us'
+title = 'Homepage of Thijs Heijligenberg'
+
+[params]
+name = 'Thijs Heijligenberg'
